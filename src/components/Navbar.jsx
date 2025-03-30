@@ -71,8 +71,8 @@ const Navbar = () => {
                   Matthew Boladele <span className="text-green-600">Akanle</span>
                 </h1>
                 <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Prof. Foluso Ayeni"
+                src="/profile-img.jpeg"
+                alt="profile-img"
                 className="rounded-lg shadow-2xl w-6"
                 />
             </div>
