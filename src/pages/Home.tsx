@@ -88,7 +88,9 @@ function Home() {
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/matthew-boladele-akanle-1431a2117/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 bg-white/20 rounded-full hover:bg-white/30 transition-colors duration-300"
                 >
                   <Linkedin className="w-5 h-5" />
