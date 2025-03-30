@@ -68,7 +68,7 @@ const Navbar = () => {
                 onClick={() => navigate("/")}
             >
                 <h1 className="text-xl font-bold text-gray-800">
-                Prof. Foluso <span className="text-green-600">Ayeni</span>
+                  Matthew Boladele <span className="text-green-600">Akanle</span>
                 </h1>
                 <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
