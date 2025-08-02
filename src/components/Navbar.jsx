@@ -64,112 +64,125 @@ const Navbar = () => {
         >
           <div className="flex items-center justify-between">
             <div
-                className="flex gap-4 cursor-pointer"
-                onClick={() => navigate("/")}
+              className="flex gap-4 cursor-pointer"
+              onClick={() => navigate("/")}
             >
-                <h1 className="text-xl font-bold text-gray-800">
-                  Matthew Boladele <span className="text-green-600">Akanle</span>
-                </h1>
-                <img
+              <h1 className="text-xl font-bold text-gray-800">
+                Matthew Boladele <span className="text-green-600">Akanle</span>
+              </h1>
+              <img
                 src="/profile-img.jpeg"
                 alt="profile-img"
                 className="rounded-lg shadow-2xl w-6"
-                />
+              />
             </div>
-            <ul className="flex space-x-4">
-                <li>
+            <ul className="flex space-x-8">
+              <li>
                 <NavLink
-                    to="/"
-                    className={({ isActive }) =>
+                  to="/"
+                  className={({ isActive }) =>
                     isActive
-                        ? "text-green-600 font-semibold"
-                        : "text-gray-600 hover:text-green-500 transition-colors"
-                    }
+                      ? "text-green-600 font-semibold"
+                      : "text-gray-600 hover:text-green-500 transition-colors"
+                  }
                 >
-                    Home
+                  Home
                 </NavLink>
-                </li>
-                <li>
+              </li>
+              <li>
                 <NavLink
-                    to="/resume"
-                    className={({ isActive }) =>
+                  to="/resume"
+                  className={({ isActive }) =>
                     isActive
-                        ? "text-green-600 font-semibold"
-                        : "text-gray-600 hover:text-green-500 transition-colors"
-                    }
+                      ? "text-green-600 font-semibold"
+                      : "text-gray-600 hover:text-green-500 transition-colors"
+                  }
                 >
-                    CV/Resume
+                  CV/Resume
                 </NavLink>
-                </li>
-                <li>
+              </li>
+              <li>
                 <NavLink
-                    to="/research"
-                    className={({ isActive }) =>
+                  to="/research"
+                  className={({ isActive }) =>
                     isActive
-                        ? "text-green-600 font-semibold"
-                        : "text-gray-600 hover:text-green-500 transition-colors"
-                    }
+                      ? "text-green-600 font-semibold"
+                      : "text-gray-600 hover:text-green-500 transition-colors"
+                  }
                 >
-                    Research & Teaching
+                  Research & Teaching
                 </NavLink>
-                </li>
-                <li>
+              </li>
+              <li>
                 <NavLink
-                    to="/publications"
-                    className={({ isActive }) =>
+                  to="/publications"
+                  className={({ isActive }) =>
                     isActive
-                        ? "text-green-600 font-semibold"
-                        : "text-gray-600 hover:text-green-500 transition-colors"
-                    }
+                      ? "text-green-600 font-semibold"
+                      : "text-gray-600 hover:text-green-500 transition-colors"
+                  }
                 >
-                    Publications
+                  Publications
                 </NavLink>
-                </li>
-                <li>
+              </li>
+              <li>
                 <NavLink
-                    to="/media"
-                    className={({ isActive }) =>
+                  to="/media"
+                  className={({ isActive }) =>
                     isActive
-                        ? "text-green-600 font-semibold"
-                        : "text-gray-600 hover:text-green-500 transition-colors"
-                    }
+                      ? "text-green-600 font-semibold"
+                      : "text-gray-600 hover:text-green-500 transition-colors"
+                  }
                 >
                   Media
                 </NavLink>
-                </li>
-                <li>
+              </li>
+              <li>
                 <NavLink
-                    to="/contact"
-                    className={({ isActive }) =>
+                  to="/blog"
+                  className={({ isActive }) =>
                     isActive
-                        ? "text-green-600 font-semibold"
-                        : "text-gray-600 hover:text-green-500 transition-colors"
-                    }
+                      ? "text-green-600 font-semibold"
+                      : "text-gray-600 hover:text-green-500 transition-colors"
+                  }
                 >
-                    Contact
+                  Blog
                 </NavLink>
-                </li>
+              </li>
+              <li>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-green-600 font-semibold"
+                      : "text-gray-600 hover:text-green-500 transition-colors"
+                  }
+                >
+                  Contact
+                </NavLink>
+              </li>
             </ul>
           </div>
-          
         </motion.nav>
       </div>
       {/* Mobile Navigation */}
       <div className="md:hidden">
-        <div className={`fixed top-0 left-0 w-full p-2 bg-white z-50 transition-shadow ${
+        <div
+          className={`fixed top-0 left-0 w-full p-2 bg-white z-50 transition-shadow ${
             isScrolled ? "shadow-lg" : "shadow-md"
-          } flex justify-between`}>
+          } flex justify-between`}
+        >
           {/* Logo */}
           <div
             className="flex gap-4 cursor-pointer"
             onClick={() => navigate("/")}
           >
             <h1 className="text-xl font-bold text-gray-800">
-              Prof. Foluso <span className="text-green-600">Ayeni</span>
+              Matthew Boladele <span className="text-green-600">Akanle</span>
             </h1>
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Prof. Foluso Ayeni"
+              src="/profile-img.jpeg"
+              alt="profile-img"
               className="rounded-lg shadow-2xl w-6"
             />
           </div>
@@ -235,6 +248,30 @@ const Navbar = () => {
                 </li>
                 <li onClick={() => setIsMobileNavOpen(false)}>
                   <NavLink
+                    to="/media"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-green-600 font-semibold"
+                        : "text-gray-600 hover:text-green-500 transition-colors"
+                    }
+                  >
+                    Media
+                  </NavLink>
+                </li>
+                <li onClick={() => setIsMobileNavOpen(false)}>
+                  <NavLink
+                    to="/blog"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-green-600 font-semibold"
+                        : "text-gray-600 hover:text-green-500 transition-colors"
+                    }
+                  >
+                    Blog
+                  </NavLink>
+                </li>
+                <li onClick={() => setIsMobileNavOpen(false)}>
+                  <NavLink
                     to="/contact"
                     className={({ isActive }) =>
                       isActive
@@ -249,13 +286,6 @@ const Navbar = () => {
             </div>
           </div>
         )}
-        {/* <motion.nav
-          initial={{ y: -100 }}
-          animate={{ y: 0 }}
-          className="flex items-center justify-between p-5 bg-white shadow-md"
-        >
-          <ul className="flex space-x-4"></ul>
-        </motion.nav> */}
       </div>
     </div>
   );

@@ -8,6 +8,8 @@ import Contact from './pages/Contact';
 import Navbar from '../src/components/Navbar';
 import Media from './pages/Media';
 import MediaDetails from './pages/MediaDetails';
+import Blog from './pages/Blog';
+import BlogDetails from './pages/BlogDetails';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/media" element={<Media />} />
             <Route path="/media/:id" element={<MediaDetails />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogDetails />} />
           </Routes>
         </motion.div>
       </div>
